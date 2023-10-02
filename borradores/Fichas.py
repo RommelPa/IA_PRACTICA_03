@@ -1,6 +1,4 @@
 import pygame
-import random
-import copy
 
 def cargarImagenes(ruta, tamano):
     img = pygame.image.load(f"{ruta}").convert_alpha()
@@ -81,7 +79,7 @@ class Tablero:
         
     def cargarImagenesFondo(reversi):
         alpha = 'ABCDEFGHI'
-        hojaSprites = pygame.image.load('assets/mapa.png').convert_alpha()
+        hojaSprites = pygame.image.load('assets/Mapa.png').convert_alpha()
         imagenDiccionario = {}
         for i in range(3):
             for j in range(7):
