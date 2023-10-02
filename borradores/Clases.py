@@ -1,6 +1,4 @@
 import pygame
-import random
-import copy
 
 def cargarImagenes(ruta, tamano):
     img = pygame.image.load(f"{ruta}").convert_alpha()
