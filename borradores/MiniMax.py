@@ -1,5 +1,4 @@
 import pygame
-import random
 import copy
 
 def direcciones(x, y, minX=0, minY=0, maxX=7, maxY=7):
@@ -133,7 +132,7 @@ class Tablero:
         
     def cargarImagenesFondo(reversi):
         alpha = 'ABCDEFGHI'
-        hojaSprites = pygame.image.load('assets/mapa.png').convert_alpha()
+        hojaSprites = pygame.image.load('assets/Mapa.png').convert_alpha()
         imagenDiccionario = {}
         for i in range(3):
             for j in range(7):
@@ -362,11 +361,3 @@ if __name__ == '__main__':
     juego = Reversi()
     juego.ejecutar()
     pygame.quit()
-
-
-
-
- 
-
-    
-        
